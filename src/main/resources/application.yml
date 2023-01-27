@@ -1,0 +1,15 @@
+server:
+  port: 5020
+  servlet:
+    context-path: /payment
+    
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: "30s"
+  main:
+    banner-mode: 'off'
+  application:
+    name: payment-api
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
